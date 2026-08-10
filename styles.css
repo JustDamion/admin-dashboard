@@ -87,7 +87,7 @@ header {
 }
 
 main {
-    padding: 10px 40px;
+    padding: 20px 40px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -232,7 +232,18 @@ main {
     margin-left: auto;
 }
 
-.card__buttons img{
+.card__buttons img {
     width: 28px;
     cursor: pointer;
+}
+
+.announcements__card {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 40px;
+    background-color: #f5f5f5;
+    box-shadow: 3px 3px 4px #bebebe;
+    border-radius: 18px;
 }
