@@ -11,181 +11,233 @@
 <body>
     <div class="sidebar">
         <div class="sidebar__branding">
-            <img src="images/icons/view-dashboard.svg" alt="">
-            <h1>Dashboard</h1>
+            <img class="sidebar__logo" src="images/icons/view-dashboard.svg" alt="">
+            <h1 class="sidebar__title">Dashboard</h1>
         </div>
 
         <nav class="sidebar__nav">
-            <ul>
-                <li><img class="nav__icon" src="images/icons/home.svg" alt="">Home</li>
-                <li><img class="nav__icon" src="images/icons/card-account-details-outline.svg" alt="">Profile</li>
-                <li><img class="nav__icon" src="images/icons/message-reply.svg" alt="">Messages</li>
-                <li><img class="nav__icon" src="images/icons/clock-time-three.svg" alt="">History</li>
-                <li><img class="nav__icon" src="images/icons/palette-swatch.svg" alt="">Tasks</li>
-                <li><img class="nav__icon" src="images/icons/account-group.svg" alt="">Communities</li>
+            <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                    <img class="sidebar__nav-icon" src="images/icons/home.svg" alt="">
+                    <span>Home</span>
+                </li>
+                <li class="sidebar__nav-item">
+                    <img class="sidebar__nav-icon" src="images/icons/card-account-details-outline.svg" alt="">
+                    <span>Profile</span>
+                </li>
+                <li class="sidebar__nav-item">
+                    <img class="sidebar__nav-icon" src="images/icons/message-reply.svg" alt="">
+                    <span>Messages</span>
+                </li>
+                <li class="sidebar__nav-item">
+                    <img class="sidebar__nav-icon" src="images/icons/clock-time-three.svg" alt="">
+                    <span>History</span>
+                </li>
+                <li class="sidebar__nav-item">
+                    <img class="sidebar__nav-icon" src="images/icons/palette-swatch.svg" alt="">
+                    <span>Tasks</span>
+                </li>
+                <li class="sidebar__nav-item">
+                    <img class="sidebar__nav-icon" src="images/icons/account-group.svg" alt="">
+                    <span>Communities</span>
+                </li>
             </ul>
 
-            <ul>
-                <li><img class="nav__icon" src="images/icons/cog.svg" alt="">Settings</li>
-                <li><img class="nav__icon" src="images/icons/help-box.svg" alt="">Support</li>
-                <li><img class="nav__icon" src="images/icons/shield-check.svg" alt="">Privacy</li>
+            <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                    <img class="sidebar__nav-icon" src="images/icons/cog.svg" alt="">
+                    <span>Settings</span>
+                </li>
+                <li class="sidebar__nav-item">
+                    <img class="sidebar__nav-icon" src="images/icons/help-box.svg" alt="">
+                    <span>Support</span>
+                </li>
+                <li class="sidebar__nav-item">
+                    <img class="sidebar__nav-icon" src="images/icons/shield-check.svg" alt="">
+                    <span>Privacy</span>
+                </li>
             </ul>
         </nav>
     </div>
 
-    <header>
-        <div class="header__searchbar">
-            <img src="images/icons/magnify.svg" alt="">
-            <input type="text" name="search" id="search">
+    <header class="header">
+        <div class="header__search">
+            <img class="header__search-icon" src="images/icons/magnify.svg" alt="">
+            <input class="header__search-input" type="text" name="search" id="search">
         </div>
 
-        <div class="header__right-user-info">
-            <img src="images/icons/bell-ring-outline.svg" alt="">
-            <img src="images/icons/account-circle.svg" alt="">
-            <p>Damion Shirkey</p>
+        <div class="header__user">
+            <img class="header__notification" src="images/icons/bell-ring-outline.svg" alt="">
+            <img class="header__avatar" src="images/icons/account-circle.svg" alt="">
+            <p class="header__username">Damion Shirkey</p>
         </div>
 
-        <div class="header__left-user-info">
-            <img src="images/icons/account-circle.svg" alt="">
+        <div class="header__greeting">
+            <img class="header__greeting-avatar" src="images/icons/account-circle.svg" alt="">
             <div>
-                <p class="greeting">Hi there,</p>
-                <p class="name">Damion Shirkey (@damion)</p>
+                <p class="header__greeting-text">Hi there,</p>
+                <p class="header_greeting-name">Damion Shirkey (@damion)</p>
             </div>
         </div>
 
-        <div class="header__inputs">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+        <div class="header__actions">
+            <button class="button">New</button>
+            <button class="button">Upload</button>
+            <button class="button">Share</button>
         </div>
     </header>
 
     <main>
-        <section class="projects-container">
-            <h2>Your Projects</h2>
-            <div class="projects__card">
-                <h3>Super Cool Project</h3>
-                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan
+        <section class="projects">
+            <h2 class="projects__title">Your Projects</h2>
+
+            <div class="project-card">
+                <h3 class="project-card__title">Super Cool Project</h3>
+                <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
+                    erat, id facilisis felis accumsan
                     nec.
                 </p>
-                <div class="card__buttons">
-                    <img src="images/icons/star-plus-outline.svg" alt="">
-                    <img src="images/icons/eye-plus-outline.svg" alt="">
-                    <img src="images/icons/source-fork.svg" alt="">
+
+                <div class="project-card__actions">
+                    <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="">
+                    <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="">
+                    <img class="project-card__action" src="images/icons/source-fork.svg" alt="">
                 </div>
             </div>
-            <div class="projects__card">
-                <h3>Less Cool Project</h3>
-                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan
+
+            <div class="project-card">
+                <h3 class="project-card__title">Less Cool Project</h3>
+                <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
+                    erat, id facilisis felis accumsan
                     nec.
                 </p>
-                <div class="card__buttons">
-                    <img src="images/icons/star-plus-outline.svg" alt="">
-                    <img src="images/icons/eye-plus-outline.svg" alt="">
-                    <img src="images/icons/source-fork.svg" alt="">
+
+                <div class="project-card__actions">
+                    <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="">
+                    <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="">
+                    <img class="project-card__action" src="images/icons/source-fork.svg" alt="">
                 </div>
             </div>
-            <div class="projects__card">
-                <h3>Impossible App</h3>
-                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan
+
+            <div class="project-card">
+                <h3 class="project-card__title">Impossible App</h3>
+                <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
+                    erat, id facilisis felis accumsan
                     nec.
                 </p>
-                <div class="card__buttons">
-                    <img src="images/icons/star-plus-outline.svg" alt="">
-                    <img src="images/icons/eye-plus-outline.svg" alt="">
-                    <img src="images/icons/source-fork.svg" alt="">
+
+                <div class="project-card__actions">
+                    <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="">
+                    <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="">
+                    <img class="project-card__action" src="images/icons/source-fork.svg" alt="">
                 </div>
             </div>
-            <div class="projects__card">
-                <h3>Easy Peasy App</h3>
-                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan
+
+            <div class="project-card">
+                <h3 class="project-card__title">Easy Peasy App</h3>
+                <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
+                    erat, id facilisis felis accumsan
                     nec.
                 </p>
-                <div class="card__buttons">
-                    <img src="images/icons/star-plus-outline.svg" alt="">
-                    <img src="images/icons/eye-plus-outline.svg" alt="">
-                    <img src="images/icons/source-fork.svg" alt="">
+
+                <div class="project-card__actions">
+                    <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="">
+                    <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="">
+                    <img class="project-card__action" src="images/icons/source-fork.svg" alt="">
                 </div>
             </div>
-            <div class="projects__card">
-                <h3>Ad Blocker</h3>
-                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan
+
+            <div class="project-card">
+                <h3 class="project-card__title">Ad Blocker</h3>
+                <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
+                    erat, id facilisis felis accumsan
                     nec.
                 </p>
-                <div class="card__buttons">
-                    <img src="images/icons/star-plus-outline.svg" alt="">
-                    <img src="images/icons/eye-plus-outline.svg" alt="">
-                    <img src="images/icons/source-fork.svg" alt="">
+
+                <div class="project-card__actions">
+                    <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="">
+                    <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="">
+                    <img class="project-card__action" src="images/icons/source-fork.svg" alt="">
                 </div>
             </div>
-            <div class="projects__card">
-                <h3>Money Maker</h3>
-                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan
+
+            <div class="project-card">
+                <h3 class="project-card__title">Money Maker</h3>
+                <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
+                    erat, id facilisis felis accumsan
                     nec.
                 </p>
-                <div class="card__buttons">
-                    <img src="images/icons/star-plus-outline.svg" alt="">
-                    <img src="images/icons/eye-plus-outline.svg" alt="">
-                    <img src="images/icons/source-fork.svg" alt="">
+
+                <div class="project-card__actions">
+                    <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="">
+                    <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="">
+                    <img class="project-card__action" src="images/icons/source-fork.svg" alt="">
                 </div>
             </div>
         </section>
 
-        <section class="announcements-container">
-            <h2>Announcements</h2>
+        <section class="announcements">
+            <h2 class="announcements__title">Announcements</h2>
+
             <div class="announcements__card">
-                <div>
-                    <h3>Site Maintenance</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aut laborum labore tenetur libero
+                <article class="announcements__item">
+                    <h3 class="announcements__item-title">Site Maintenance</h3>
+                    <p class="announcements__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Non aut laborum labore tenetur libero
                         iste
                         unde incidunt quas totam, reiciendis fugiat</p>
-                </div>
-                <div>
-                    <h3>Community Share Day</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aut laborum labore tenetur libero
+                </article>
+
+                <article class="announcements__item">
+                    <h3 class="announcements__item-title">Community Share Day</h3>
+                    <p class="announcements__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Non aut laborum labore tenetur libero
                         iste
                         unde incidunt quas totam, reiciendis fugiat</p>
-                </div>
-                <div>
-                    <h3>Updated Privacy Policy</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aut laborum labore tenetur libero
+                </article>
+
+                <article class="announcements__item">
+                    <h3 class="announcements__item-title">Updated Privacy Policy</h3>
+                    <p class="announcements__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Non aut laborum labore tenetur libero
                         iste
                         unde incidunt quas totam, reiciendis fugiat</p>
-                </div>
+                </article>
             </div>
         </section>
 
-        <section class="trending-container">
-            <h2>Trending</h2>
+        <section class="trending">
+            <h2 class="trending__title">Trending</h2>
+
             <div class="trending__card">
-                <div class="trending__user">
-                    <img src="images/icons/account-circle.svg" alt="">
-                    <div>
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
+                <article class="trending__user">
+                    <img class="trending__avatar" src="images/icons/account-circle.svg" alt="">
+                    <div class="trending__user-info">
+                        <p class="trending__username">@tegan</p>
+                        <p class="trending__project">World Peace Builder</p>
                     </div>
-                </div>
-                <div class="trending__user">
-                    <img src="images/icons/account-circle.svg" alt="">
-                    <div>
-                        <p>@morgan</p>
-                        <p>Super Cool Project</p>
+                </article>
+                <article class="trending__user">
+                    <img class="trending__avatar" src="images/icons/account-circle.svg" alt="">
+                    <div class="trending__user-info">
+                        <p class="trending__username">@morgan</p>
+                        <p class="trending__project">Super Cool Project</p>
                     </div>
-                </div>
-                <div class="trending__user">
-                    <img src="images/icons/account-circle.svg" alt="">
-                    <div>
-                        <p>@kendall</p>
-                        <p>Life Changing App</p>
+                </article>
+                <article class="trending__user">
+                    <img class="trending__avatar" src="images/icons/account-circle.svg" alt="">
+                    <div class="trending__user-info">
+                        <p class="trending__username">@kendall</p>
+                        <p class="trending__project">Life Changing App</p>
                     </div>
-                </div>
-                <div class="trending__user">
-                    <img src="images/icons/account-circle.svg" alt="">
-                    <div>
-                        <p>@alex</p>
-                        <p>No Traffic Maker</p>
+                </article>
+                <article class="trending__user">
+                    <img class="trending__avatar" src="images/icons/account-circle.svg" alt="">
+                    <div class="trending__user-info">
+                        <p class="trending__username">@alex</p>
+                        <p class="trending__project">No Traffic Maker</p>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
     </main>
