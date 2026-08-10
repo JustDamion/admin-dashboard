@@ -215,9 +215,14 @@ main {
 
 .projects {
     grid-row: 1 / -1;
+}
+
+.projects__grid {
+    grid-row: 1 / -1;
     display: grid;
-    grid-template-rows: 46px repeat(auto-fill, 250px);
-    grid-template-columns: repeat(auto-fit, clamp(400px, 33%, 600px));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    gap: 1rem;
 }
 
 .projects__title {
@@ -229,7 +234,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 30px 30px 0;
     border-left: solid 6px orange;
 }
 
@@ -288,4 +292,11 @@ main {
 .trending__project {
     font-size: 0.9rem;
     color: var(--c-gray-2)
+}
+
+@media screen and (max-width: 1000px) {
+    .projects__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
 }

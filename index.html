@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="sidebar">
+    <aside class="sidebar">
         <div class="sidebar__branding">
             <img class="sidebar__logo" src="images/icons/view-dashboard.svg" alt="" width="48" height="48">
             <h1 class="sidebar__title">Dashboard</h1>
@@ -60,12 +60,12 @@
                 </li>
             </ul>
         </nav>
-    </div>
+    </aside>
 
     <header class="header">
         <div class="header__search">
             <img class="header__search-icon" src="images/icons/magnify.svg" alt="" width="32" height="32">
-            <input class="header__search-input" type="text" name="search" id="search">
+            <input class="header__search-input" type="text" name="search" id="search" placeholder="Search...">
         </div>
 
         <div class="header__user">
@@ -93,89 +93,113 @@
         <section class="projects">
             <h2 class="projects__title">Your Projects</h2>
 
-            <div class="card project-card">
-                <h3 class="project-card__title">Super Cool Project</h3>
-                <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
-                    erat, id facilisis felis accumsan
-                    nec.
-                </p>
+            <div class="projects__grid">
+                <div class="card project-card">
+                    <h3 class="project-card__title">Super Cool Project</h3>
+                    <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                        nibh
+                        erat, id facilisis felis accumsan
+                        nec.
+                    </p>
 
-                <div class="project-card__actions">
-                    <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="" width="28"
-                        height="28">
-                    <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="" width="28"
-                        height="28">
-                    <img class="project-card__action" src="images/icons/source-fork.svg" alt="" width="28" height="28">
+                    <div class="project-card__actions">
+                        <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="" width="28"
+                            height="28">
+                        <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="" width="28"
+                            height="28">
+                        <img class="project-card__action" src="images/icons/source-fork.svg" alt="" width="28"
+                            height="28">
+                    </div>
                 </div>
-            </div>
 
-            <div class="card project-card">
-                <h3 class="project-card__title">Less Cool Project</h3>
-                <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
-                    erat, id facilisis felis accumsan
-                    nec.
-                </p>
+                <div class="card project-card">
+                    <h3 class="project-card__title">Less Cool Project</h3>
+                    <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                        nibh
+                        erat, id facilisis felis accumsan
+                        nec.
+                    </p>
 
-                <div class="project-card__actions">
-                    <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="" width="28" height="28">
-                    <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="" width="28" height="28">
-                    <img class="project-card__action" src="images/icons/source-fork.svg" alt="" width="28" height="28">
+                    <div class="project-card__actions">
+                        <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="" width="28"
+                            height="28">
+                        <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="" width="28"
+                            height="28">
+                        <img class="project-card__action" src="images/icons/source-fork.svg" alt="" width="28"
+                            height="28">
+                    </div>
                 </div>
-            </div>
 
-            <div class="card project-card">
-                <h3 class="project-card__title">Impossible App</h3>
-                <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
-                    erat, id facilisis felis accumsan
-                    nec.
-                </p>
+                <div class="card project-card">
+                    <h3 class="project-card__title">Impossible App</h3>
+                    <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                        nibh
+                        erat, id facilisis felis accumsan
+                        nec.
+                    </p>
 
-                <div class="project-card__actions">
-                    <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="" width="28" height="28">
-                    <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="" width="28" height="28">
-                    <img class="project-card__action" src="images/icons/source-fork.svg" alt="" width="28" height="28">
+                    <div class="project-card__actions">
+                        <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="" width="28"
+                            height="28">
+                        <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="" width="28"
+                            height="28">
+                        <img class="project-card__action" src="images/icons/source-fork.svg" alt="" width="28"
+                            height="28">
+                    </div>
                 </div>
-            </div>
 
-            <div class="card project-card">
-                <h3 class="project-card__title">Easy Peasy App</h3>
-                <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
-                    erat, id facilisis felis accumsan
-                    nec.
-                </p>
+                <div class="card project-card">
+                    <h3 class="project-card__title">Easy Peasy App</h3>
+                    <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                        nibh
+                        erat, id facilisis felis accumsan
+                        nec.
+                    </p>
 
-                <div class="project-card__actions">
-                    <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="" width="28" height="28">
-                    <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="" width="28" height="28">
-                    <img class="project-card__action" src="images/icons/source-fork.svg" alt="" width="28" height="28">
+                    <div class="project-card__actions">
+                        <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="" width="28"
+                            height="28">
+                        <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="" width="28"
+                            height="28">
+                        <img class="project-card__action" src="images/icons/source-fork.svg" alt="" width="28"
+                            height="28">
+                    </div>
                 </div>
-            </div>
 
-            <div class="card project-card">
-                <h3 class="project-card__title">Ad Blocker</h3>
-                <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
-                    erat, id facilisis felis accumsan
-                    nec.
-                </p>
+                <div class="card project-card">
+                    <h3 class="project-card__title">Ad Blocker</h3>
+                    <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                        nibh
+                        erat, id facilisis felis accumsan
+                        nec.
+                    </p>
 
-                <div class="project-card__actions">
-                    <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="" width="28" height="28">
-                    <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="" width="28" height="28">
-                    <img class="project-card__action" src="images/icons/source-fork.svg" alt="" width="28" height="28">
+                    <div class="project-card__actions">
+                        <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="" width="28"
+                            height="28">
+                        <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="" width="28"
+                            height="28">
+                        <img class="project-card__action" src="images/icons/source-fork.svg" alt="" width="28"
+                            height="28">
+                    </div>
                 </div>
-            </div>
 
-            <div class="card project-card">
-                <h3 class="project-card__title">Money Maker</h3>
-                <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
-                    erat, id facilisis felis accumsan
-                    nec.
-                </p>
+                <div class="card project-card">
+                    <h3 class="project-card__title">Money Maker</h3>
+                    <p class="project-card__description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                        nibh
+                        erat, id facilisis felis accumsan
+                        nec.
+                    </p>
 
-                <div class="project-card__actions">
-                    <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="" width="28" height="28">
-                    <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="" width="28" height="28">
-                    <img class="project-card__action" src="images/icons/source-fork.svg" alt="" width="28" height="28">
+                    <div class="project-card__actions">
+                        <img class="project-card__action" src="images/icons/star-plus-outline.svg" alt="" width="28"
+                            height="28">
+                        <img class="project-card__action" src="images/icons/eye-plus-outline.svg" alt="" width="28"
+                            height="28">
+                        <img class="project-card__action" src="images/icons/source-fork.svg" alt="" width="28"
+                            height="28">
+                    </div>
                 </div>
             </div>
         </section>
