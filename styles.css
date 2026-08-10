@@ -256,7 +256,12 @@ main {
     gap: 20px;
 }
 
+.announcements__item-title {
+    font-size: 1rem;
+}
+
 .announcements__item-description {
+    font-size: 0.9rem;
     color: var(--c-gray-2);
 }
 
@@ -276,6 +281,11 @@ main {
     gap: 15px;
 }
 
+.trending__username {
+    font-size: 0.9rem;
+}
+
 .trending__project {
+    font-size: 0.9rem;
     color: var(--c-gray-2)
 }
