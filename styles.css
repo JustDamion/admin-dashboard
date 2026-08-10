@@ -1,4 +1,5 @@
 /* START CSS RESET */
+
 *,
 *::before,
 *::after {
@@ -86,6 +87,13 @@ main {
     background-color: #dbe2e7;
 }
 
+.card {
+    padding: 20px 40px;
+    background-color: #f5f5f5;
+    box-shadow: 3px 3px 4px #bebebe;
+    border-radius: 18px;
+}
+
 .button {
     padding: 8px 26px;
     color: white;
@@ -133,7 +141,7 @@ main {
     cursor: pointer;
 }
 
-.header__right-user-info p {
+.header__username {
     font-size: 1.1rem;
     font-weight: bold;
 }
@@ -215,12 +223,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 40px;
     margin: 0 30px 30px 0;
-    background-color: #f5f5f5;
-    box-shadow: 3px 3px 4px #bebebe;
     border-left: solid 6px orange;
-    border-radius: 18px;
 }
 
 .project-card__description {
@@ -244,10 +248,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 40px;
-    background-color: #f5f5f5;
-    box-shadow: 3px 3px 4px #bebebe;
-    border-radius: 18px;
 }
 
 .announcements__item-description {
@@ -259,13 +259,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 40px;
-    background-color: #f5f5f5;
-    box-shadow: 3px 3px 4px #bebebe;
-    border-radius: 18px;
 }
 
-.trending__card img {
+.trending__avatar {
     width: 50px;
 }
 
