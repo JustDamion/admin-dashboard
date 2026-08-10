@@ -203,11 +203,11 @@ main {
     display: grid;
     grid-template-rows: 40px auto;
     grid-template-columns: repeat(auto-fit, clamp(400px, 33%, 600px));
-    gap: 30px;
 }
 
 .projects-container h2 {
     grid-column: 1 / -1;
+    margin-bottom: 10px;
 }
 
 .projects__card {
@@ -215,6 +215,7 @@ main {
     flex-direction: column;
     justify-content: center;
     padding: 20px 40px;
+    margin: 0 30px 30px 0;
     background-color: #f5f5f5;
     box-shadow: 3px 3px 4px #bebebe;
     border-left: solid 6px orange;
@@ -238,7 +239,7 @@ main {
 }
 
 .announcements__card {
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
