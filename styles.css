@@ -201,7 +201,7 @@ main {
 .projects-container {
     grid-row: 1 / -1;
     display: grid;
-    grid-template-rows: 40px auto;
+    grid-template-rows: 46px repeat(auto-fill, 250px);
     grid-template-columns: repeat(auto-fit, clamp(400px, 33%, 600px));
 }
 
